@@ -3,6 +3,7 @@ __pycache__/
 .env
 .vscode/
 .idea/
+practice/
 
 # Using UV more ahead.
 .venv/

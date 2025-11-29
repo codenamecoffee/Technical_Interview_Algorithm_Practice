@@ -41,10 +41,21 @@ The goal is to strengthen my ability to solve problems under constraints — tim
 
 ## 🧪 Random Challenge Script
 
-Located in: ```random_challenge/generator.py```
+Located in: `random_challenge/generator.py`
 
-automatically selects one random exercise from each difficulty level.
-This helps create unpredictable and realistic interview practice sessions.
+This script automatically selects one random exercise from each difficulty level (basics, intermediate, advanced) to simulate unpredictable and realistic interview practice sessions.
+
+- Creates a `practice` folder in the repository root (if it doesn't exist).
+- Inside `practice`, generates a subfolder named with the current date (`YYYY_MM_DD`).
+- Copies the selected exercises' problem descriptions (docstrings) into new attempt files, named by difficulty and exercise, e.g.:
+  - `basic_exercise_009_find_min_and_max_attempt.py`
+  - `intermediate_exercise_002_character_compression_attempt.py`
+  - `advanced_exercise_002_longest_unique_substring_attempt.py`
+- All attempt files are placed in the dated subfolder for easy organization.
+- Starts a 60-minute countdown timer in the terminal. When time is up, all attempt files are set to read-only mode to simulate real interview pressure.
+- The timer and file locking can be customized for shorter or longer sessions.
+
+This workflow helps you practice under realistic constraints, track your daily progress, and keep your solutions organized.
 
 <br>
 

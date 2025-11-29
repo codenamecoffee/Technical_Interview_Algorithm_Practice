@@ -100,7 +100,7 @@ def main():
     created_files = create_practice_files(selected_exercises)
 
     # Start the timer and lock files after 60 minutes
-    countdown_and_lock_files(created_files, minutes=1)
+    countdown_and_lock_files(created_files, minutes=60)
 
 if __name__ == "__main__":
     main()
